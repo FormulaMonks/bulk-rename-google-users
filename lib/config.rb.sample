@@ -1,0 +1,11 @@
+# Configuration variables
+
+CREDENTIALS_PATH = "".freeze
+ADMIN_EMAIL      = "".freeze
+ORIGINAL_DOMAIN  = "".freeze
+NEW_DOMAIN       = "".freeze
+
+abort "Please define a path for the credentials file"                  if CREDENTIALS_PATH.empty?
+abort "Please define the email for the account admin"                  if ADMIN_EMAIL.empty?
+abort "Please define the domain to rename users and groups from"       if ORIGINAL_DOMAIN.empty?
+abort "Please define the new email for users and groups being renamed" if NEW_DOMAIN.empty?
